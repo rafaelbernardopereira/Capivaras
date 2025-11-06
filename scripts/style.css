@@ -1,0 +1,345 @@
+body {
+    background-color: rgb(30, 10, 0);
+    color: rgb(255, 255, 255);
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+ol{
+    list-style: none;
+    width: 40%;
+    border: solid, 2px, rgb(170, 110, 90);
+    border-radius: 15px;
+    padding: 7px;
+    background-color: rgb(90, 30, 0);
+    margin-bottom: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgb(204, 140, 0);
+    transition: 1s;
+}
+ol:hover{
+    transform: scale(1.2);
+    border-color: rgb(200, 140, 39);
+    background-color: rgb(120, 50, 30);
+    text-align: center;
+    box-shadow: 1px 1px 10px 5px rgb(204, 140, 0);
+}
+
+h1{
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(114, 50, 0);
+    text-shadow: 3px 1px 4px  rgb(204, 140, 0);
+    text-align: center;
+}
+
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-principal{
+    margin-top: 120px;
+}
+
+.imagem-e-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.imagem-principal{
+    width: 70%;
+    
+}
+
+.estilizador{
+    position: absolute;
+    width: 70%;
+    height: 35%;
+    z-index: 2;
+    background-image: radial-gradient(circle, rgba(30, 10, 0, 0.2) 30%, rgba(30, 10, 0, 1) 80%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 628px){
+    .estilizador{
+        height: 43%;
+    }
+}
+@media screen and (min-width: 629px) and (max-width: 724px){
+    .estilizador{
+        height: 50%;
+    }
+}
+@media screen and (min-width: 725px) and (max-width: 840px){
+    .estilizador{
+        height: 58%;
+    }
+}
+@media screen and (min-width: 840px) and (max-width: 955px){
+    .estilizador{
+        height: 66%;
+    }
+    .imagem-e-texto{
+        font-size: 18px;
+    }
+    
+}
+@media screen and (min-width: 955px) and (max-width: 1064px){
+    .estilizador{
+        height: 74%;
+    }
+    .imagem-e-texto{
+        font-size: 18px;
+    }
+
+}
+@media screen and (min-width: 1064px) and (max-width: 1156px){
+    .estilizador{
+        height: 80%;
+    }
+    .imagem-e-texto{
+        font-size: 18px;
+    }
+   
+
+}
+@media screen and (min-width: 1156px) and (max-width: 1576px){
+    .estilizador{
+        height: 86%;
+    }
+    .imagem-e-texto{
+        font-size: 20px;
+        
+    }
+    
+}
+
+.texto-principal{
+    position: absolute;
+    
+    font-size: 80%;
+    width: 70%;
+    text-align: center;
+    z-index: 3;
+}
+
+
+.troca-pagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fieldset{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 35px;
+    border: solid, 2px, rgb(150, 150, 150);
+    border-radius: 15px;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    line-height: 30px;
+    text-indent: 5%;
+    transition: 1s;
+}
+
+input[type="text"], input[type="email"]{
+    width: 90%;
+}
+
+input[type="number"]{
+    width: 30%;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="date"]:hover, input[type="color"]:hover{
+    transform: scale(1.2);
+    border: solid 2px rgb(190, 140, 0);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="color"]:focus{
+    transform: scale(1.2);
+    border: solid 2px rgb(190, 140, 0);
+}
+
+input[type="submit"]{
+    width: 50%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(90, 30, 0);
+    box-shadow: 2px 2px 5px rgb(204, 140, 0);
+    border: solid, 2px, rgb(170, 110, 90);
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.2);
+    border-color: rgb(200, 140, 39);
+    background-color: rgb(120, 50, 30);
+    text-align: center;
+    box-shadow: 1px 1px 10px 5px rgb(204, 140, 0);
+}
+
+.capivara-amiga{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.capivara-bailarina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.capivara-bebe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.capivara-donut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.capivara-estudiosa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.capivara-feliz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.capivara-ia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+iframe{
+    width: 150%;
+}
+
+.ancora{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    text-decoration: none;
+    background-color: rgb(190, 130, 100);
+    width: 100%;
+    padding: 10px 3%;
+    border: solid, 2px,rgb(170, 110, 90);
+    z-index: 100;
+    font-size: 60%;
+    align-items: center;
+    line-height: 130%;
+    justify-content: center;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    word-wrap: break-word;
+    margin: 0 1%;
+    width: 10%;
+    transition: 1s;
+}
+
+a:hover{
+    transform: scale(1.1);
+    border-color: rgb(200, 140, 39);
+    background-color: rgb(120, 50, 30);
+    text-align: center;
+}
+
+.menu{
+    border: solid, 2px, rgb(170, 110, 90);
+    border-radius: 15px;
+    padding: 7px;
+    background-color: rgb(90, 30, 0);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.tutorial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+video{
+    width: 100%;
+}
+.texto-tutoriais{
+    font-size: 20px;
+}
